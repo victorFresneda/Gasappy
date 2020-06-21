@@ -9,16 +9,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="237dp"
-        android:layout_height="32dp"
+        android:layout_width="182dp"
+        android:layout_height="34dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="20dp"
-        android:text=" Calculos ventilación"
+        android:layout_marginBottom="16dp"
+        android:text="Vacios internos"
         android:textColor="@android:color/background_light"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -29,7 +30,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="174dp"
         android:layout_marginBottom="296dp"
-        android:text="Vacios internos"
+        android:text="Calculos de ventilación"
         android:textColor="@android:color/background_light"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
