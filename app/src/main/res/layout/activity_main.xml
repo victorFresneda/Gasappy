@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton32"
+        app:layout_constraintTop_toBottomOf="@+id/butVoid"
         app:layout_constraintVertical_bias="0.481" />
 
     <TextView
@@ -54,10 +54,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logogasappy" />
+        app:srcCompat="@drawable/logogasappy1" />
 
     <ImageButton
-        android:id="@+id/imageButton32"
+        android:id="@+id/butVoid"
         android:layout_width="96dp"
         android:layout_height="122dp"
         android:layout_marginStart="35dp"
