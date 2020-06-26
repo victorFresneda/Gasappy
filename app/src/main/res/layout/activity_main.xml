@@ -9,20 +9,22 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="111dp"
+        android:layout_width="118dp"
         android:layout_height="44dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/square_721_bt"
         android:text="Vacios internos"
         android:textColor="@android:color/background_light"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/butVoid"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView3"
@@ -39,7 +41,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/butCal" />
+        app:layout_constraintTop_toBottomOf="@+id/butCalVoid"
+        android:fontFamily="@font/square_721_bt"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -49,7 +52,7 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/butCal"
+        app:layout_constraintBottom_toTopOf="@+id/butCalVoid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -74,7 +77,7 @@
         app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
     <ImageButton
-        android:id="@+id/butCal"
+        android:id="@+id/butCalConf"
         android:layout_width="121dp"
         android:layout_height="98dp"
         android:layout_marginStart="35dp"
