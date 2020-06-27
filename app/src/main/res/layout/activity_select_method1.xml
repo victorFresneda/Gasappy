@@ -46,30 +46,84 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="131dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/square_721_bt"
-        android:text="Seleccione un metodo"
+        android:text="Seleccione un metodo de ventilación"
         android:textColor="@color/write"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@id/butMet1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtKwRequired" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/butMet1"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
         android:layout_marginStart="161dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="315dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bt_ripple"
+        android:text="Metodo 1"
+        android:textColor="@drawable/txt_bcv"
+        app:layout_constraintBottom_toTopOf="@+id/butMet2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/butMet2"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bt_ripple"
+        android:text="Metodo 2"
+        android:textColor="@drawable/txt_bcv"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butMet1" />
+
+    <Button
+        android:id="@+id/butFloor1"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bt_ripple"
+        android:text="En el mismo piso"
+        android:textColor="@drawable/txt_bcv"
+        app:layout_constraintBottom_toTopOf="@+id/butFloor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/butFloor2"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/bt_ripple"
+        android:text="En pisos diferentes"
+        android:textColor="@drawable/txt_bcv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butFloor1" />
 
     <TextView
         android:id="@+id/textView8"
@@ -86,6 +140,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/square_721_bt"
+        android:text="Combinacion de espacios"
+        android:textColor="@color/write"
+        app:layout_constraintBottom_toTopOf="@+id/butFloor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butMet2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

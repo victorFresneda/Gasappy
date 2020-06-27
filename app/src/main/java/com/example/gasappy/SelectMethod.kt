@@ -51,13 +51,13 @@ class SelectMethod : AppCompatActivity() {
 
               Toast.makeText(this, "El recinto es confinado  (^.^)  ", Toast.LENGTH_LONG).show()//Muestra mensaje ememrgente
 
-            //Exporta la variable confinement a la activity SelectMethod1
-            val intent = Intent (this, SelectMethod1 :: class.java)
+               //Exporta la variable confinement a la activity SelectMethod1
+               val intent = Intent (this, SelectMethod1 :: class.java)
                val b : Bundle = Bundle()
-            val df = DecimalFormat("#.##")// Se utiliza la clase DecimalFormat para mostrar solo 2 digitos por pantalla
-            b.putString("power", df.format(confinement).toString())
-                intent.putExtras(b)
-                startActivity(intent)
+               val df = DecimalFormat("#.##")// Se utiliza la clase DecimalFormat para mostrar solo 2 digitos por pantalla
+                b.putString("power", df.format(confinement).toString())
+                  intent.putExtras(b)
+                  startActivity(intent)
 
         }
     }
