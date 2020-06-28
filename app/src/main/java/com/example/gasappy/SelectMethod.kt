@@ -7,17 +7,20 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_select_method.*
 import kotlinx.android.synthetic.main.activity_select_method.butCalVent
+import kotlinx.android.synthetic.main.activity_select_method1.*
 import java.text.DecimalFormat
 
 class SelectMethod : AppCompatActivity() {
 
-    private var numVol: Float? = null
-    private var numPow: Float? = null
+        var numVol: Float? = null
+        var numPow: Float? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_method)
+
+
 
 
 
@@ -33,6 +36,13 @@ class SelectMethod : AppCompatActivity() {
         }
 
     }
+
+
+
+
+
+
+
     //Funcion para determinar si un recinto es confinado o no
     fun confinementCal(power: Float, vol: Float) {
 
@@ -46,10 +56,10 @@ class SelectMethod : AppCompatActivity() {
 
          } else {
 
-              val calculationWindow: Intent = Intent(applicationContext, SelectMethod1::class.java)
+             val calculationWindow: Intent = Intent(applicationContext, SelectMethod1::class.java)
               startActivity(calculationWindow)
 
-              Toast.makeText(this, "El recinto es confinado  (^.^)  ", Toast.LENGTH_LONG).show()//Muestra mensaje ememrgente
+                  Toast.makeText(this, "El recinto es confinado  (^.^)  ", Toast.LENGTH_LONG).show()//Muestra mensaje ememrgente
 
                //Exporta la variable confinement a la activity SelectMethod1
                val intent = Intent (this, SelectMethod1 :: class.java)
